@@ -479,3 +479,135 @@ input[type=checkbox] {
 }
 
 *:focus {outline: none;}
+
+/* ---------------------------------- */
+/* Footer */
+/* ---------------------------------- */
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.fb,
+.tw,
+.google,
+.ig {
+    transition: color 0.2s;
+}
+
+.fb {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    font-size: 120%;
+    height: 25px;
+    margin-bottom: 5px;
+    
+    margin-right: 10px;
+    vertical-align: middle;
+    line-height: 120%;
+}
+
+.fb:hover {
+    color: #3b5998;
+}
+
+.tw {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    font-size: 120%;
+    height: 25px;
+    margin-bottom: 5px;
+    
+    margin-right: 10px;
+    vertical-align: middle;
+    line-height: 120%;
+}
+
+.tw:hover {
+    color: #00aced;
+}
+
+.google {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    font-size: 120%;
+    height: 25px;
+    margin-bottom: 5px;
+    
+    margin-right: 10px;
+    vertical-align: middle;
+    line-height: 120%;
+}
+
+.google:hover {
+    color: #dd4b39;
+}
+
+.ig {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    font-size: 120%;
+    height: 25px;
+    margin-bottom: 5px;
+    
+    margin-right: 10px;
+    vertical-align: middle;
+    line-height: 120%;
+}
+
+.ig:hover {
+    color: #517fa4;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
