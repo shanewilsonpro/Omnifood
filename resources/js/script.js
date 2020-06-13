@@ -59,6 +59,47 @@ $(document).ready(function () {
             }
         });
     
-    
+        function isScrolledIntoView(elem) {
+
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
+
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
+
+        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+        }
+        
+          $(window).scroll(function() {
+            $(".js--wp-1").each(function() {
+              if (isScrolledIntoView(this) === true) {
+                $(this).addClass("animate__fadeIn");
+              }
+            });
+          });
+
+          $(window).scroll(function() {
+            $(".js--wp-2").each(function() {
+              if (isScrolledIntoView(this) === true) {
+                $(this).addClass("animate__fadeInUp");
+              }
+            });
+          });
+
+          $(window).scroll(function() {
+            $(".js--wp-3").each(function() {
+              if (isScrolledIntoView(this) === true) {
+                $(this).addClass("animate__fadeIn");
+              }
+            });
+          });
+
+          $(window).scroll(function() {
+            $(".js--wp-4").each(function() {
+              if (isScrolledIntoView(this) === true) {
+                $(this).addClass("animate__pulse");
+              }
+            });
+          });
        
 });
